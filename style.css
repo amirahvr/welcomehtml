@@ -48,7 +48,7 @@ html, body {
 
 .footer-image {
   transition: transform 0.4s ease;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .footer-image:hover {
@@ -57,11 +57,11 @@ html, body {
 }
 
 .text-top {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #f0e2c5;
   letter-spacing: 1px;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .text-bottom {
@@ -73,7 +73,7 @@ html, body {
 }
 
 .typing {
-  font-size: 1,3rem;
+  font-size: 1,7rem;
   color: #f0e2c5;
   font-weight: 600;
   letter-spacing: 1px;

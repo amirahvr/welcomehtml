@@ -91,14 +91,14 @@ img:hover {
 
 .text-top {
   display: block;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1.6rem, 5vw, 3rem);
   color: #f0e2c5;
-  margin-bottom: 1vw;
+  margin-top : -3vw;
 }
 
 .text-bottom {
   display: block;
-  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-size: clamp(2rem, 8vw, 5rem);
   color: #f7c16c;
 }
 

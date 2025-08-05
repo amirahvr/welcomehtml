@@ -53,7 +53,7 @@ body {
 /* Kontainer Utama */
 .container {
   width: 100%;
-  max-width: 90vw;
+  max-width: 95vw;
 }
 
 /* Kartu */
@@ -91,7 +91,7 @@ img:hover {
 
 .text-top {
   display: block;
-  font-size: clamp(1.6rem, 5vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 3rem);
   color: #f0e2c5;
   margin-top : -3vw;
 }

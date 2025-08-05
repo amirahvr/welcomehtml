@@ -1,90 +1,54 @@
-/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Crimson Pro', serif;
   background-color: #480f0a;
   color: #f5f0e6;
 }
 
-/* Container Utama - Tengah Sempurna */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2vw;
+  padding: 20px;
 }
 
-/* Card */
 .card {
-  width: 100%;
-  max-width: 500px;
   background-color: #5d1913;
-  border-radius: 20px;
-  padding: 5vw 6vw;
+  border: 3px solid #c1954b;
+  border-radius: 15px;
+  max-width: 420px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 1.5vw 4vw rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 1s ease forwards;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   position: relative;
+  animation: popIn 1s ease-out forwards;
 }
 
-/* Gambar */
 .header-image,
 .main-image,
 .footer-image {
   width: 100%;
   height: auto;
-  margin-bottom: 4vw;
-  animation: fadeInUp 0.8s ease forwards;
+  margin-bottom: 20px;
+  animation: fadeIn 1.6s ease-out both;
 }
 
-/* Hilangkan margin-top negatif */
 .header-image {
   margin-top: 0;
 }
 
 .main-image {
-  margin-top: -2vw;
+  margin-top: -10px;
 }
 
-/* Text */
-.text-top {
-  font-size: clamp(1.4rem, 4vw, 3rem);
-  color: #f0e2c5;
-  margin-bottom: 0.5vw;
-}
-
-.text-bottom {
-  font-size: clamp(2rem, 8vw, 5rem);
-  color: #f7c16c;
-}
-
-.typing {
-  font-size: clamp(1rem, 3.5vw, 1.8rem);
-  color: #f0e2c5;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 2px solid #f7c16c;
-  animation: typing 3s steps(30, end) forwards, blink-caret 0.7s step-end infinite;
-  animation-delay: 0.8s;
-  max-width: 100%;
-}
-
-.text-bawah {
-  font-size: clamp(1.4rem, 8vw, 3rem);
-  color: #c54747;
-  font-weight: bold;
-  margin-top: 1vw;
-}
-
-/* Footer */
 .footer-image {
-  margin-top: 4vw;
   transition: transform 0.4s ease;
+  margin-top: 30px;
 }
 
 .footer-image:hover {
@@ -92,9 +56,58 @@ html, body {
   cursor: pointer;
 }
 
-/* Responsive */
+.text-top {
+  font-size: 1.2rem;
+  color: #f0e2c5;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.text-bottom {
+  font-size: 1.9rem;
+  color: #f7c16c;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.typing {
+  font-size: 1rem;
+  color: #f0e2c5;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.text-bawah {
+  font-size: 1.5rem;
+  color: #c54747;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 1.2px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 @media (min-width: 768px) {
   .card {
-    padding: 3rem 4rem;
+    padding: 40px 30px;
   }
 }

@@ -57,7 +57,7 @@ html, body {
 }
 
 .text-top {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #f0e2c5;
   letter-spacing: 1px;
   font-weight: bold;
@@ -65,7 +65,7 @@ html, body {
 }
 
 .text-bottom {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   color: #f7c16c;
   font-weight: 700;
   letter-spacing: 1px;
@@ -73,7 +73,7 @@ html, body {
 }
 
 .typing {
-  font-size: 1rem;
+  font-size: 1,3rem;
   color: #f0e2c5;
   font-weight: 600;
   letter-spacing: 1px;
@@ -84,7 +84,7 @@ html, body {
 }
 
 .text-bawah {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #c54747;
   font-weight: bold;
   margin-top: 5px;

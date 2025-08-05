@@ -73,6 +73,7 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 4vw;
+  margin-top: -4vw;
   animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -91,7 +92,7 @@ img:hover {
 
 .text-top {
   display: block;
-  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-size: clamp(1.4rem, 4vw, 3rem);
   color: #f0e2c5;
   margin-top : -3vw;
 }
@@ -102,9 +103,13 @@ img:hover {
   color: #f7c16c;
 }
 
+.main-image fade-in {
+  margin-top: -10vw;
+}
+
 /* Info Instagram */
 .next-mission-info {
-  margin-top: 4vw;
+  margin-top: -3vw;
   animation: fadeInUp 0.8s ease forwards;
   animation-delay: 0.6s;
 }
@@ -129,7 +134,7 @@ img:hover {
 }
 
 .text-bawah {
-  font-size: clamp(1.4rem, 5vw, 2.5rem);
+  font-size: clamp(1.4rem, 8vw, 3rem);
   font-weight: bold;
   color: #c54747;
   margin-top: 1vw;
@@ -137,7 +142,7 @@ img:hover {
 
 /* Instagram Icon */
 .footer-image {
-  margin-top: 4vw;
+  margin-top: 2vw;
   transition: transform 0.4s ease;
   animation: fadeInUp 0.8s ease forwards;
   animation-delay: 1s;
